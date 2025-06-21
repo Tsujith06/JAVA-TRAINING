@@ -1,0 +1,26 @@
+class Main {
+    public static void main(String[] args) {
+        int n=14,l=1;
+        int s=1,c=0;
+        while(c!=n){
+            if(s%2!=0){
+                c=c+2;
+                System.out.println("s:"+s);
+                System.out.println("odd:"+c);
+                if (c==14){
+                    break;
+                }
+                l=l+1;
+            }
+            else{
+                c=c-1;
+                System.out.println("s:"+s);
+                System.out.println("even:"+c);
+                l=l+1;
+            }
+            s=s+1;
+            }
+            System.out.print(l);
+        }
+        
+    }
