@@ -1,0 +1,8 @@
+class Main {
+    public static void main(String[] args) {
+        float a=12.4251547f;
+        float b=a*100;
+        System.out.println((int)b);
+        System.out.println((int)b/100.0f);
+    }
+}
