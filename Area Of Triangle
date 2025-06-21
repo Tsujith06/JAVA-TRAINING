@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        
+        System.out.print("enter the base: ");
+        int b=in.nextInt();
+        System.out.print("enter the height: ");
+        int h=in.nextInt();
+        
+        int a=b*h/2;
+        System.out.println("The area of the triangle is ");
+        System.out.println(a);
+    }
+}
