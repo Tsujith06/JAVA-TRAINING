@@ -1,0 +1,24 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        int n=311,l=0;
+        int t=n;
+        while (t!=1){
+            t=t/2;
+            l+=1;
+        }
+        int arr[]=new int[l+1];
+        int i=l;
+        while(n!=1){
+            int q=n%2;
+            arr[i]=q;
+            n=n/2;
+            i=i-1;
+        }
+        if(n==1){
+            arr[0]=1;
+        }
+        System.out.print(Arrays.toString(arr));
+       
+    }
+}
