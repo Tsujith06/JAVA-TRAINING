@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        System.out.print("Enter the numbere: ");
+        int n=input.nextInt();
+        int s=0;
+        while (n!=1){
+            if (n%2!=0){
+                // System.out.println(1);
+                s=s+1;}
+            else{
+                // System.out.println(0);
+                s=s+0;
+            }
+            n/=2;
+            // System.out.println("n/2="+n);
+        }
+        if (n==1){
+        // System.out.println(n);
+        s=s+1;
+        }
+        System.out.println(s);
+        System.out.println(s==n);
+        }
+}
+        
