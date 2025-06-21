@@ -1,0 +1,52 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        int n=in.nextInt();
+        int r=0,bc=0,fc=0;
+        
+        //Reverse side check
+        for(int i=n;i>=0;i--){
+            r=0;
+            int t=i;
+            //reversing
+            while(t!=0){
+            int l=t%10;
+            r=r*10+l;
+            t=t/10;
+            }
+            
+            if(r==i){
+                break;
+            }
+            bc=bc+1;
+            // System.out.print(i);
+        }
+        
+        for(int i=n; ;i++){
+            r=0;
+            int t=i;
+            //reversing
+            while(t!=0){
+            int l=t%10;
+            if(l==0){
+                
+            }
+            r=r*10+l;
+            t=t/10;
+            }
+            
+            if(r==i){
+                break;
+            }
+            fc=fc+1;
+        }
+        if(bc<fc){
+            System.out.print(bc);
+        }
+        else{
+            System.out.print(fc);
+        }
+    
+    }
+}
