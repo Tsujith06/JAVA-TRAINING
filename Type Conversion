@@ -1,0 +1,10 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        int n=15;
+        long l=n;
+        double d=l;
+        int i= (int) d;
+        System.out.print(n+" "+l+" "+d+" "+i);
+    }
+}
