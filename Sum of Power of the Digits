@@ -1,0 +1,19 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        System.out.print("Enter the number: ");
+        int num=in.nextInt();
+        int s=0,l,n=num*num;
+        while(n>9){
+        while(n>0){
+            l=n%10;
+            s=s+l;
+            n=n/10;
+        }
+        n=s;
+        s=0;
+        }
+        System.out.println(n);
+    }
+}
