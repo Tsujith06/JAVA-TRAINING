@@ -1,0 +1,24 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        int num[]={1,2,3,4};
+        int f[]=new int[num.length],i=0;
+        int b[]=new int[num.length],j=0;
+        f[0]=num[num.length-1];
+        b[num.length-1]=num[0];
+        for(int k=0;k<num.length-1;k++){
+            i=i+1;
+            f[i]=num[k];
+        }
+        for(int l=1;l<num.length;l++){
+            b[j]=num[l];
+            j=j+1;
+        }
+        System.out.print("Array after forward rotation: ");
+        System.out.println(Arrays.toString(f));
+        System.out.print("Array after backward rotation: ");
+        System.out.print(Arrays.toString(b));
+        
+    }
+}
