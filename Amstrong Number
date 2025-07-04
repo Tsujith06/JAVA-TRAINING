@@ -1,0 +1,18 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        int num=370;
+        int n=num,s=0,l;
+        while(n!=0){
+            l=n%10;
+            s+=Math.pow(l,3);
+            n=n/10;
+        }
+        if(s==num){
+            System.out.print(num+" "+"is an amstrong number");
+        }
+        else{
+            System.out.print(num+" "+"is not an amstrong number");
+        }
+    }
+}
