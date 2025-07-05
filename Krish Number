@@ -1,0 +1,21 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args){
+        int num=145,n=num,l,f=1,s=0;
+        while(n!=0){
+            l=n%10;
+            for(int i=1;i<=l;i++){
+                f=f*i;
+            }
+            s+=f;
+            n=n/10;
+            f=1;
+    }
+    if(s==num){
+        System.out.print(num+" is a krish number");
+    }
+    else{
+        System.out.print(num+" is not krish number");
+    }
+}
+}
