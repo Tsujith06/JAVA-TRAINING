@@ -1,0 +1,27 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        int n=31,num=n,p=1,rp=1,r=0;
+        for(int i=2;i<n;i++){
+            if(n%i==0){
+                p=0;
+            }
+        }
+        while(num!=0){
+            int l=num%10;
+            r=r*10+l;
+            num/=10;
+        }
+        for(int i=2;i<r;i++){
+            if(r%i==0){
+                rp=0;
+            }
+        }
+        if(p==1 && rp==1){
+        System.out.print(n+" is Emirp Number");
+        }
+        else{
+        System.out.print(n+" is not an Emirp Number");
+        }
+    }
+}
