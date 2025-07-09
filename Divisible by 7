@@ -1,0 +1,19 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        int n=371,num=n;
+        while(n>9){
+            int l=n%10;
+            int m=l*2;
+            n=n/10-m;
+            // System.out.println(n);
+        }
+        if(n%7==0){
+            System.out.print(num+" is is divisible by 7.");
+        }
+        else{
+            System.out.print(num+" is is not divisible by 7.");
+        }
+        
+    }
+}
