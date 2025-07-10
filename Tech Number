@@ -1,0 +1,29 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        int n=2025,c=0,num=n,p=1;
+        while(num!=0){
+            c+=1;
+            num=num/10;
+        }
+        if(c%2==0 ){
+            num=n;
+            for(int i=0;i<c/2;i++){
+                p=p*10;
+                num=num/10;
+             }
+        int h=n%100;
+        int s=num+h;
+        if(s*s==n){
+            System.out.print(n+" is Tech Number");
+        }
+        else{
+            System.out.print(n+" is not Tech Number");
+        }
+        }
+        else{
+            System.out.print(n+" is not Tech Number");
+        }
+        
+    }
+}
