@@ -1,0 +1,49 @@
+import java.util.*;
+
+class Car{
+    static int seat=4;
+    static String modal="SUV";
+    String type = "Luxury";
+}
+
+class Bmw extends Car{
+    static int seat=10;
+    static String name="BMW";
+    public void Bmw_name(){
+        
+        System.out.println("NAME : "+name);
+    }
+    public static void Bmw_seat( ){
+        System.out.println("SEAT : "+seat);
+    }
+}
+
+class Benz extends Bmw{
+    static int seat=10;
+    static String name="Benz";
+    public void name(){
+        String name="abc";
+        System.out.println("NAME : "+this.name);
+    }
+    public static void seat(Car obj){
+        System.out.println("SEAT : "+obj.seat);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        Benz obj=new Benz();
+        String c_name=in.nextLine();
+        if (c_name.equals("Bmw")){
+            System.out.println("BMW");
+            Bmw.seat=5;
+            obj.Bmw_seat();
+        }
+        else{
+            System.out.println("no");
+        }
+        
+        
+    }
+}
