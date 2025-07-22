@@ -1,0 +1,28 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        String s = "abcd",r="",p="";
+        int k=1,f=0;
+        for(int i=s.length()-1;i>=0;i--)
+        {
+            r+=s.charAt(i);
+        }
+        while(f!=1){
+            p="";
+            for(int j=r.length()-1;j>=0;j--){
+                p+=r.charAt(j);
+                
+            }
+            if(!(r.equals(p))){
+                r+=s.charAt(k);
+            }
+            else{
+                f=1;
+            }
+            k+=1;
+            
+        }
+        System.out.print(p);
+    }
+}
