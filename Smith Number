@@ -1,0 +1,42 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        int num=666,n=num,d=2,ps=0,ds=0;
+        while(n!=0){
+            int ld=n%10;
+            ds+=ld;
+            n=n/10;
+        }
+        System.out.println("Sum of digit = "+ds);
+        n=num;
+        while(n!=1){
+            if(n%d==0){
+                // System.out.println(d);
+                if(d<10){
+                    ps+=d;
+                }
+                else{
+                    int D=d;
+                    while(D!=0){
+                        int l=D%10;
+                        ps+=l;
+                        D=D/10;
+                    }
+                }
+                n=n/d;
+            }
+            else{
+                d+=1;
+            }
+        }
+        System.out.println("Sum of digits of prime factor = "+ds);
+        if(ds==ps){
+            System.out.print(num+" is a Smith Number");
+        }
+        else{
+            System.out.print(num+" is not a Smith Number");
+        }
+        
+    }
+}
